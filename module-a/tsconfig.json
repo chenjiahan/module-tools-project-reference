@@ -1,0 +1,19 @@
+{
+  "extends": "@modern-js/tsconfig/base",
+  "declaration": true,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "composite": true,
+    "isolatedModules": true
+  },
+  "references": [
+    {
+      "path": "../module-b"
+    }
+  ],
+  "include": ["src"],
+  "exclude": ["**/node_modules"]
+}
